@@ -1,0 +1,19 @@
+<div *ngIf="person">
+    <h2>Edit Person</h2>
+    <form>
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" [(ngModel)]="person.name">
+      </div>
+      <div>
+        <label for="age">Age:</label>
+        <input type="number" id="age" [(ngModel)]="person.age">
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" [(ngModel)]="person.email">
+      </div>
+      <button (click)="saveChanges()">Save Changes</button>
+    </form>
+  </div>
+  
